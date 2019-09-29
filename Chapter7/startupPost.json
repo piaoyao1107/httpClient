@@ -1,0 +1,27 @@
+[
+  {
+    "description": "模拟一个没有参数的post请求",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "这是没有参数的post请求"
+    }
+  },
+  {
+    "description": "模拟一个带参数的post请求",
+    "request": {
+      "uri": "/postwithparam",
+      "method": "post",
+      // forms对应的key-value
+      "forms": {
+        "name": "Tom",
+        "age": "20"
+      }
+    },
+    "response": {
+      "text": "Tom今年20岁了！！！"
+    }
+  }
+]

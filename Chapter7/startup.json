@@ -1,0 +1,254 @@
+[
+  {
+    "description": "这是第一个mock例子",
+    "request": {
+      "uri": "/demo"
+    },
+    "response": {
+      "text": "这是第一个mock接口的返回信息"
+    }
+  },
+  {
+    "description": "这是一个不带参数的get请求",
+    "request": {
+      "uri": "/getdemo",
+      "method": "get"
+    },
+    "response": {
+      "json": {
+        "search":"success",
+        "name":"韩梅梅",
+        "age": "22",
+        "score": {
+          "English": "88",
+          "Chinese": "97",
+          "Math": "95"
+        }
+      }
+    }
+  },
+  {
+    "description": "这是一个带参数的get请求",
+    "request": {
+      "uri": "/getwithparam",
+      "method": "get",
+      "queries": {
+        "count": "13900001111",
+        "status": "1"
+      }
+    },
+    "response": {
+      "json": {
+        "search":"success",
+        "name":"韩梅梅",
+        "age": "22",
+        "score": {
+          "English": "88",
+          "Chinese": "97",
+          "Math": "95"
+        }
+      }
+    }
+  },
+  {
+    "description": "这是一个不带参数的post请求",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "json": {
+        "login":"success",
+        "msg":"恭喜你登陆成功！"
+      }
+    }
+  },
+  {
+    "description": "这是一个带参数的post请求",
+    "request": {
+      "uri": "/postwithparam",
+      "method": "post",
+      "forms": {
+        "count": "13900001111",
+        "status": "1"
+      }
+    },
+    "response": {
+      "json": {
+        "login":"success",
+        "msg":"恭喜你登陆成功！"
+      }
+    }
+  },
+  {
+    "description": "模拟一个带cookies的get请求",
+    "request": {
+      "uri": "/get/with/cookies",
+      "method": "get",
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response": {
+      "text": "这是一个需要带cookies的get请求的返回信息"
+    }
+  },
+  {
+    "description": "这是一个带cookies的post请求",
+    "request": {
+      "uri": "/post/with/cookies",
+      "method": "post",
+      "cookies":{
+        "login":"true"
+      },
+      "json": {
+        "count": "13900001111",
+        "password": "123456"
+      }
+    },
+    "response": {
+      "json": {
+        "login":"success",
+        "msg":"恭喜你登陆成功！"
+      }
+    }
+  },
+  {
+    "description": "模拟一个带header的post请求",
+    "request": {
+      "uri": "/post/with/headers",
+      "method": "post",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "json": {
+        "count": "13900001111",
+        "password": "123456"
+      }
+    },
+    "response": {
+      "json": {
+        "login":"success",
+        "msg":"恭喜你登陆成功！"
+      }
+    }
+  },
+  {
+    "description": "模拟一个重定向到百度首页",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "模拟一个重定向到自己网站",
+    "request": {
+      "uri": "/redirect/topath"
+    },
+    "redirectTo": "/redirect/login"
+  },
+  {
+    "description": "这是被重定向到的请求",
+    "request": {
+      "uri": "/redirect/login"
+    },
+    "response": {
+      "text": "重定向成功了，这里是首页"
+    }
+  },
+  {
+    "description":"返回json接口",
+    "request":{
+      "uri":"/lotto",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+        "lotto":{
+          "lottoId":5,
+          "winning-numbers":[2,45,34,23,7,5,3],
+          "winners":[{
+            "winnerId":23,
+            "numbers":[2,45,34,23,3,5]
+          },{
+            "winnerId":54,
+            "numbers":[52,3,12,11,18,22]
+          }]
+        }
+      }
+    }
+  },
+  {
+    "description":"以BigDecimal返回float和double类型",
+    "request":{
+      "uri":"/price",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+        "price":12.12
+      }
+    }
+  },
+  {
+    "description":"返回内容是xml",
+    "request":{
+      "uri":"/getxml",
+      "method":"post",
+      "forms":{
+        "firstName":"John",
+        "lastName":"Doe"
+      }
+    },
+    "response":{
+      "text":"<?xml version=\"1.0\" encoding=\"UTF-8\" ?> <greeting>\n<firstName>John</firstName>\n<lastName>Doe</lastName>\n</greeting>",
+      "headers":{
+        "Content-Type":"text/xml"
+      }
+
+    }
+  },
+  {
+    "description":"返回内容是xml",
+    "request":{
+      "uri":"/getxmlwithnamespace",
+      "method":"get"
+    },
+    "response":{
+      "text":"<?xml version=\"1.0\" encoding=\"UTF-8\" ?> <foo xmlns:ns=\"http://localhost/\">\n<bar>sudo </bar>\n<ns:bar>make me a sandwich!</ns:bar>\n</foo>",
+      "headers":{
+        "Content-Type":"text/xml"
+      }
+    }
+  },
+  {
+    "description":"返回内容是xml，入参类型是json",
+    "request":{
+      "uri":"/getxmlwithjson",
+      "method":"post",
+      "json":{
+        "firstName":"John",
+        "lastName":"Doe"
+      }
+    },
+    "response":{
+      "text":"<?xml version=\"1.0\" encoding=\"UTF-8\" ?> <greeting>\n<firstName>John</firstName>\n<lastName>Doe</lastName>\n</greeting>",
+      "headers":{
+        "Content-Type":"text/xml"
+      }
+    }
+  },
+  {
+    "description": "这是一个会返回cookies信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "text": "恭喜你成功获得cookies信息！"
+    }
+  }
+]
