@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -80,14 +81,21 @@ public class Marketing {
         //处理结果，判断
         String code =  resultJson.getString("code");
         Assert.assertEquals("0",code);
+        if (code.equals("0")){
+            JSONObject data = resultJson.getJSONObject("data");
+            int userId = data.getInt("userId");
+            token = data.getString("token");
+            Assert.assertEquals(672,userId);
+        }
 
-        JSONObject data = resultJson.getJSONObject("data");
-        int userId = data.getInt("userId");
-        token = data.getString("token");
-        Assert.assertEquals(672,userId);
+//        JSONObject data = resultJson.getJSONObject("data");
+//        int userId = data.getInt("userId");
+//        token = data.getString("token");
+//        Assert.assertEquals(672,userId);
 
     }
 
+    //今日朋友圈-内容分类-查询
     @Test(priority = 2)
     public void testListCategory() throws IOException {
 
@@ -110,6 +118,36 @@ public class Marketing {
         Assert.assertEquals(0,code);
         Assert.assertEquals("成功",msg);
 
+    }
+
+    //今日朋友圈-内容分类-添加分类
+    @Test(priority = 3)
+    public void testAddCategory() throws IOException {
+        String uri = bundle.getString("test.category.add.uri");
+        String testUrl = this.url + uri;
+
+        DefaultHttpClient client = new DefaultHttpClient();
+        HttpPost post = new HttpPost(testUrl);
+
+        long nowDate =  new Date().getTime();
+        String categoryName = "分类"+nowDate;
+        JSONObject param = new JSONObject();
+        param.put("name",categoryName);
+
+        post.setHeader("content-type","application/json");
+        post.setHeader("token",this.token);
+        StringEntity entity = new StringEntity(param.toString(),"utf-8");
+        post.setEntity(entity);
+
+        HttpResponse response = client.execute(post);
+        String result = EntityUtils.toString(response.getEntity(),"utf-8");
+        JSONObject resultJson = new JSONObject(result);
+        System.out.println("添加分类接口返回响应为 >>> "+resultJson);
+
+        int code = resultJson.getInt("code");
+        String msg = resultJson.getString("msg");
+        Assert.assertEquals(0,code);
+        Assert.assertEquals("成功",msg);
 
 
     }
