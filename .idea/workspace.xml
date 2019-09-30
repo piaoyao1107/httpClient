@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4721367f-08c8-455b-8d65-1fe6e00c412e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Marketing/src/main/java/com/course/marketing/Marketing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marketing/src/main/java/com/course/marketing/Marketing.java" beforeDir="false" afterPath="$PROJECT_DIR$/Marketing/src/main/java/com/course/marketing/Marketing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Marketing/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Marketing/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Marketing/src/main/java/com/course/marketing/Marketing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="202">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HttpClient/src/main/java/com/course/httpclient/cookies/MyCookiesForPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="38">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Marketing/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -71,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HttpClient/src/main/java/com/course/httpclient/cookies/MyCookiesForGet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
+            <state relative-caret-position="-586">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -141,8 +140,8 @@
         <option value="$PROJECT_DIR$/HttpClient/src/main/java/com/course/httpclient/cookies/MyCookiesForPost.java" />
         <option value="$PROJECT_DIR$/HttpClient/pom.xml" />
         <option value="$PROJECT_DIR$/Marketing/pom.xml" />
-        <option value="$PROJECT_DIR$/Marketing/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/Marketing/src/main/java/Marketing.java" />
+        <option value="$PROJECT_DIR$/Marketing/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/Marketing/src/main/java/com/course/marketing/Marketing.java" />
       </list>
     </option>
@@ -374,27 +373,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Marketing - 2019.09.30 at 12h 06m 07s.xml">
-      <configuration name="Marketing" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Marketing - 2019.09.30 at 12h 06m 44s.xml">
-      <configuration name="Marketing" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Marketing - 2019.09.30 at 12h 06m 57s.xml">
-      <configuration name="Marketing" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Marketing - 2019.09.30 at 12h 10m 59s.xml">
-      <configuration name="Marketing" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Marketing - 2019.09.30 at 12h 12m 26s.xml">
-      <configuration name="Marketing" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Marketing - 2019.09.30 at 12h 13m 12s.xml">
-      <configuration name="Marketing" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Marketing - 2019.09.30 at 12h 16m 07s.xml">
-      <configuration name="Marketing" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Marketing - 2019.09.30 at 12h 18m 10s.xml">
       <configuration name="Marketing" configurationId="TestNG" />
     </history-entry>
@@ -402,6 +380,27 @@
       <configuration name="Marketing" configurationId="TestNG" />
     </history-entry>
     <history-entry file="Marketing - 2019.09.30 at 12h 22m 44s.xml">
+      <configuration name="Marketing" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Marketing - 2019.09.30 at 12h 23m 09s.xml">
+      <configuration name="Marketing" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Marketing - 2019.09.30 at 13h 05m 32s.xml">
+      <configuration name="Marketing" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Marketing - 2019.09.30 at 13h 06m 13s.xml">
+      <configuration name="Marketing" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Marketing - 2019.09.30 at 13h 15m 30s.xml">
+      <configuration name="Marketing" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Marketing - 2019.09.30 at 13h 16m 08s.xml">
+      <configuration name="Marketing" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Marketing - 2019.09.30 at 13h 16m 27s.xml">
+      <configuration name="Marketing" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Marketing - 2019.09.30 at 13h 18m 52s.xml">
       <configuration name="Marketing" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -418,7 +417,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32934132" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2709581" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -726,16 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HttpClient/src/main/java/com/course/httpclient/cookies/MyCookiesForGet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HttpClient/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -760,27 +749,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Marketing/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6890">
           <caret line="471" column="11" selection-start-line="471" selection-start-column="11" selection-end-line="471" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpClient/src/main/java/com/course/httpclient/cookies/MyCookiesForPost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -797,10 +769,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpClient/src/main/java/com/course/httpclient/cookies/MyCookiesForGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-586">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpClient/src/main/java/com/course/httpclient/cookies/MyCookiesForPost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Marketing/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Marketing/src/main/java/com/course/marketing/Marketing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="202">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

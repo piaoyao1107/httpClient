@@ -2,6 +2,7 @@ package com.course.marketing;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -21,6 +22,7 @@ public class Marketing {
 
     private String url;
     private ResourceBundle bundle;
+    private String token;
 
     @BeforeTest
     public void beforeTest(){
@@ -29,7 +31,7 @@ public class Marketing {
 
     }
 
-    @Test
+    @Test(priority = 1)
     public void testLogin() throws IOException {
 
         String uri = bundle.getString("test.login.uri");
@@ -69,11 +71,11 @@ public class Marketing {
 
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println("转换成json之前的响应："+result);
+//        System.out.println("转换成json之前的响应："+result);
 
         //响应结果字符串转换成json
         JSONObject resultJson = new JSONObject(result);
-        System.out.println("转换成json之后的响应："+resultJson);
+        System.out.println("登陆接口返回响应为 >>> "+resultJson);
 
         //处理结果，判断
         String code =  resultJson.getString("code");
@@ -81,14 +83,36 @@ public class Marketing {
 
         JSONObject data = resultJson.getJSONObject("data");
         int userId = data.getInt("userId");
-        System.out.println(data);
-        System.out.println("userId是："+userId);
+        token = data.getString("token");
         Assert.assertEquals(672,userId);
 
-//        String login = (String) resultJson.get("login");
-//        String msg = (String)resultJson.get("msg");
-//        Assert.assertEquals("success",login);
-//        Assert.assertEquals("恭喜你登陆成功！",msg);
+    }
+
+    @Test(priority = 2)
+    public void testListCategory() throws IOException {
+
+        String uri = bundle.getString("test.category.list.uri");
+        String testUrl = this.url + uri;
+
+        DefaultHttpClient client = new DefaultHttpClient();
+        HttpGet get = new HttpGet(testUrl);
+        get.setHeader("content-type","application/json");
+        get.setHeader("token",this.token);
+
+        HttpResponse response = client.execute(get);
+        String result = EntityUtils.toString(response.getEntity(),"utf-8");
+
+        JSONObject resultJson = new JSONObject(result);
+        System.out.println("查询分类列表接口返回响应为 >>> "+resultJson);
+
+        int code = resultJson.getInt("code");
+        String msg = resultJson.getString("msg");
+        Assert.assertEquals(0,code);
+        Assert.assertEquals("成功",msg);
+
+
 
     }
+
+
 }
