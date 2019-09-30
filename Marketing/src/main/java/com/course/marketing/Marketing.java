@@ -140,14 +140,19 @@ public class Marketing {
         post.setEntity(entity);
 
         HttpResponse response = client.execute(post);
-        String result = EntityUtils.toString(response.getEntity(),"utf-8");
-        JSONObject resultJson = new JSONObject(result);
-        System.out.println("添加分类接口返回响应为 >>> "+resultJson);
 
-        int code = resultJson.getInt("code");
-        String msg = resultJson.getString("msg");
-        Assert.assertEquals(0,code);
-        Assert.assertEquals("成功",msg);
+        if(response.getStatusLine().getStatusCode()==200){
+
+            String result = EntityUtils.toString(response.getEntity(),"utf-8");
+            JSONObject resultJson = new JSONObject(result);
+            System.out.println("添加分类接口返回响应为 >>> "+resultJson);
+
+            int code = resultJson.getInt("code");
+            String msg = resultJson.getString("msg");
+            Assert.assertEquals(0,code);
+            Assert.assertEquals("成功",msg);
+
+        }
 
 
     }
