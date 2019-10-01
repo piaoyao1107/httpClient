@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter9/Chapter9.iml" filepath="$PROJECT_DIR$/Chapter9/Chapter9.iml" />
       <module fileurl="file://$PROJECT_DIR$/HttpClient/HttpClient.iml" filepath="$PROJECT_DIR$/HttpClient/HttpClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/Marketing/Marketing.iml" filepath="$PROJECT_DIR$/Marketing/Marketing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot/SpringBoot.iml" filepath="$PROJECT_DIR$/SpringBoot/SpringBoot.iml" />
     </modules>
   </component>
 </project>
